@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표의 구조 잡기</title>
+    <style>
+        th, td {
+            width: 80px;
+            padding: 10px;
+            
+        }
+        thead, tfoot{
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <!--table>(thead>tr>th*5)+(tbody>(tr>th+td*4)*5)+(tfoot>tr>(th+td*4))-->
+    <table>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>학교수</th>
+                <th>학급수</th>
+                <th>학생수</th>
+                <th>직원수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>유치원</th>
+                <td>117</td>
+                <td>252</td>
+                <td>5,547</td>
+                <td>474</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>초등학교</th>
+                <td>417</td>
+                <td>542</td>
+                <td>3,247</td>
+                <td>424</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>중학교</th>
+                <td>127</td>
+                <td>255</td>
+                <td>1,345</td>
+                <td>453</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>고등학교</th>
+                <td>457</td>
+                <td>457</td>
+                <td>5,323</td>
+                <td>444</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>특수학교</th>
+                <td>127</td>
+                <td>124</td>
+                <td>4, 637</td>
+                <td>435</td>
+                <td></td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <th>합계</th>
+                    <td>300</td>
+                    <td>3, 220</td>
+                    <td>33,486</td>
+                    <td>6, 532</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form fieldset{
+            width: 600px;
+            margin: 0 auto;
+
+        }
+        form legend{
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .legeno{
+            color: purple;
+        }
+        form{
+            width: 470px;
+        }
+        form ul li{
+            list-style: none;
+            margin: 12px;
+        }
+        form label.reg{
+            font-size: 14px;
+            font-weight: bold;
+            width: 80px;
+            float: left;
+        }
+        .btn{
+            align-self:flex-end;
+        }
+    </style> 
+</head>
+<body>
+    <div style="width: 600px; margin: auto; background-color: aquamarine; " >
+    <h1 style="text-align: center;" >상품 주문서</h1>
+    <form>
+        <fieldset>
+            <legend class="legeno">개인 정보</legend>
+            <ul>
+                <li>
+                    <label class="reg" for="user_name">이름</label>
+                    <input type="text" id="user" size="20" placeholder="여백없이 입력" required>
+                </li>
+                <li>
+                    <label class="reg" for="new_phone">연락처</label>
+                    <input type="text" id="user_phone" size="20" placeholder="연락가능한 번호" required>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend class="legeno">배송지 정보</legend>
+             <ul>
+                 <li>
+                    <label class="reg" for="addr">주소</label>
+                    <input type="text" size="31" >
+                 </li>
+                 <li>
+                    <label class="reg" for="phoneNum">전화번호</label>
+                    <input type="text">
+                 </li>
+                 <li>
+                    <label class="reg" for="memo">메모</label>
+                    <textarea name="memo" cols="30" rows="5"></textarea>
+                 </li>
+             </ul>
+        </fieldset>
+        <fieldset>
+            <legend class="legeno">주문 정보</legend>
+            <ul>
+                <li>
+                    <input type="radio" name="yami">
+                    <label for="">과테말라 안티구아(100g)</label>
+                    <input type="number" min="0" max="50" value="0"> 개
+                </li>
+                <li>
+                    <input type="radio" name="yami">
+                    <label for="">인도네시아 만델링(100g)</label>
+                    <input type="number" min="0" max="50" value="0"> 개
+                </li>
+                <li>
+                    <input type="radio" name="yami">
+                    <label for="">탐라는도다(블렌딩)(100g)</label>
+                    <input type="number" min="0" max="50" value="0"> 개
+                </li>
+            </ul>
+        </fieldset>
+   
+           <div style="margin: auto; width: 600px; text-align: center; ">
+                <button class="btn" type="submit">주문 하기</button>
+                <button class="btn" type="reset">다시 작성</button>
+            </div>
+    </form>
+
+</body>
+</html>
